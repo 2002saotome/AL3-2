@@ -48,7 +48,21 @@ class GameScene {
 	Audio* audio_ = nullptr;
 	DebugText* debugText_ = nullptr;
 
+	//3Dモデル
+	Model* model_ = nullptr;
+
+	//ワールドトランスフォーム
+	WorldTransform worldTransform_[100];
+	ViewProjection viewProjection_;
+
+	//カメラ上方向の角度
+	float viewAngle = 0.0f;
+
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
+	/// 
+//テクスチャハンドル
+uint32_t textureHandle_ = 0;
 };
+
