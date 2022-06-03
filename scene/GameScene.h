@@ -63,6 +63,10 @@ class GameScene {
 	/// </summary>
 	/// 
 //テクスチャハンドル
-uint32_t textureHandle_ = 0;
+ uint32_t textureHandle_ = 0;
+
+ public:
+ //パーツID
+ enum PartId { Root, Spine, Chest, Head, ArmL, ArmR, Hip, LegL, LegR };
 };
 
